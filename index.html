@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>정책자금 1차 가이드 · 종류×주관기관 지도</title>
+<meta name="description" content="정책자금·특례보증·보조금의 종류와 주관기관을 한눈에 보는 스터디용 가이드. 신청 안내가 아닙니다.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#3182F6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%233182F6'/%3E%3Ctext x='16' y='22' font-size='16' font-weight='700' text-anchor='middle' fill='white'%3E%EC%9E%90%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--blue:#3182F6;--blue-bg:#E8F3FF;--ink:#191F28;--g1:#333D4B;--g2:#6B7684;--g3:#8B95A1;--line:#E5E8EB;--bg:#F2F4F6;--green:#03B26C;--green-bg:#E5F8EF;--orange:#F59E0B;--orange-bg:#FFF4DB;--red:#F04452}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:Pretendard,-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;letter-spacing:-.01em;word-break:keep-all}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px 80px}
+header{background:#fff;padding:36px 20px 24px;border-radius:0 0 28px 28px;margin:0 -16px 16px}
+header .in{max-width:720px;margin:0 auto}
+.eyebrow{color:var(--blue);font-weight:700;font-size:14px}
+h1{font-size:28px;line-height:1.3;font-weight:800;margin:6px 0 10px}
+.sub{color:var(--g2);font-size:15px}
+.stats{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+.stat{background:var(--bg);border-radius:14px;padding:10px 14px;font-size:13px;color:var(--g2)}
+.stat b{display:block;font-size:20px;color:var(--ink);font-weight:800}
+.notice{background:var(--orange-bg);border-radius:16px;padding:14px 16px;font-size:14px;color:#8A5A00;margin-bottom:16px}
+.notice b{color:#6b4500}
+.notice.blue{background:var(--blue-bg);color:#1B3A6B}.notice.blue b{color:#1B64DA}
+.notice.green{background:var(--green-bg);color:#0B5C38}.notice.green b{color:#02864F}
+section{margin-top:22px}
+.sec-h{display:flex;align-items:baseline;gap:8px;margin:0 4px 12px;flex-wrap:wrap}
+.sec-h h2{font-size:22px;font-weight:800}
+.sec-h .n{color:var(--blue);font-weight:800;font-size:15px}
+.sec-d{color:var(--g2);font-size:14px;margin:-6px 4px 12px}
+.card{background:#fff;border-radius:22px;padding:20px;margin-bottom:12px}
+.card h3{font-size:18px;font-weight:800;line-height:1.35;margin-bottom:6px}
+.card .lead{color:var(--g1);font-size:14px;margin-bottom:12px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 12px}
+.b{font-size:12px;font-weight:700;border-radius:8px;padding:4px 8px;background:var(--bg);color:var(--g1)}
+.b.loan{background:var(--blue-bg);color:var(--blue)}
+.b.guar{background:#F3E8FF;color:#7C3AED}
+.b.grant{background:var(--green-bg);color:#02864F}
+.b.warn{background:var(--orange-bg);color:#8A5A00}
+.b.ok{background:var(--green-bg);color:#02864F}
+.b.ask{background:var(--bg);color:var(--g2)}
+dl{display:grid;grid-template-columns:72px 1fr;gap:8px 10px;font-size:14px}
+dt{color:var(--g3);font-weight:600}dd{color:var(--g1)}
+dd.unk{color:var(--g3)}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{font-size:14px;font-weight:700;padding:10px 14px;border-radius:12px;background:var(--blue-bg);color:var(--blue)}
+.btn.s{background:var(--bg);color:var(--g1);font-weight:600}
+.map{display:grid;gap:10px}
+.map-row{background:#fff;border-radius:18px;padding:16px;display:grid;gap:10px}
+.map-type{display:flex;align-items:center;gap:10px}
+.map-type .dot{width:10px;height:10px;border-radius:50%;flex:none}
+.map-type h3{font-size:16px;font-weight:800}
+.map-type p{font-size:13px;color:var(--g2);margin-top:2px}
+.orgs{display:grid;gap:8px}
+.org{background:var(--bg);border-radius:14px;padding:12px 14px}
+.org b{display:block;font-size:14px;font-weight:800;color:var(--ink)}
+.org span{display:block;font-size:13px;color:var(--g2);margin-top:3px;line-height:1.45}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px;font-size:12px;color:var(--g3);font-weight:600}
+.flow i{background:#fff;color:var(--g1);padding:4px 8px;border-radius:8px;font-style:normal;border:1px solid var(--line)}
+.check{background:#fff;border-radius:22px;padding:22px;margin-top:22px}
+.check h3{font-size:20px;font-weight:800;margin-bottom:4px}
+.check p{color:var(--g2);font-size:14px;margin-bottom:14px}
+.check label{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line);cursor:pointer;font-size:15px}
+.check input{width:22px;height:22px;accent-color:var(--blue);flex:none;margin-top:1px}
+.check label b{display:block}.check label span{color:var(--g2);font-size:13px}
+.list{margin:8px 0 0 18px;color:var(--g1);font-size:14px}
+.list li{margin-top:6px}
+.src a{color:var(--blue);font-weight:600}
+footer{margin-top:28px;color:var(--g3);font-size:12px;line-height:1.7;padding:0 4px}
+@media(min-width:640px){h1{font-size:34px}.card{padding:24px}.map-row{padding:20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="in">
+<div class="eyebrow">스터디용 · 1차 · 전국 제도</div>
+<h1>정책자금<br>종류 × 주관기관 지도</h1>
+<p class="sub">신청 안내문이 아니라, 누가 무엇을 다루는지 먼저 그리는 공부용 가이드예요. 기준일 2026-11-06.</p>
+<div class="stats">
+<div class="stat"><b>4</b>큰 종류</div>
+<div class="stat"><b>6+</b>주요 주관기관</div>
+<div class="stat"><b>전국</b>1차 범위</div>
+<div class="stat"><b>다음</b>지역 자금</div>
+</div>
+</div></header>
+
+<div class="notice"><b>꼭 읽어주세요.</b> 이 페이지는 금융·정책 자문이 아닙니다. 숫자(한도·금리·기간)는 <b>공식 공고에서 확인된 것만</b> 적었고, 확인이 안 되면 <b>확인 필요</b>로 표시했어요. 실제 적격 여부는 사업자 업종·업력·신용·용도에 따라 달라지니, 관심 제도가 생기면 해당 기관 안내와 세무사·담당자와 한 번 더 맞춰 보세요.</div>
+
+<div class="notice blue"><b>1차 범위.</b> 지금은 <b>전국 제도</b>만 지도에 넣었어요. 경기도·화성시 등 광역·기초 지자체 육성자금·시군 특례는 <b>다음에</b> 정리할 예정입니다.</div>
+
+<section>
+<div class="sec-h"><h2>한눈에 보는 지도</h2><span class="n">종류 → 주관</span></div>
+<p class="sec-d">같은 “정책자금”이라도 대출·보증·보조금은 성격이 다릅니다. 아래에서 종류를 고른 뒤, 누가 주관하는지 보세요.</p>
+<div class="map">
+
+<div class="map-row">
+<div class="map-type"><span class="dot" style="background:var(--blue)"></span><div><h3>① 정책대출 (융자)</h3><p>정부가 예산·기금을 바탕으로 낮은 금리로 <b>빌려주는</b> 돈. 갚아야 해요.</p></div></div>
+<div class="orgs">
+<div class="org"><b>소상공인시장진흥공단 (소진공)</b><span>소상공인 대상 정책자금의 중심 창구. 직접대출·대리대출(은행 경유)을 운영. 신청 창: 소상공인정책자금(ols.semas.or.kr).</span></div>
+<div class="org"><b>중소벤처기업진흥공단 (중진공, KOSME)</b><span>중소·벤처 정책자금의 중심 창구. 창업기반지원자금 등. 신청 창: kosmes.or.kr. 소상공인은 일부 자금에서 제한될 수 있어 <b>대상 문구를 먼저</b> 읽어야 해요.</span></div>
+<div class="org"><b>중소벤처기업부 (중기부)</b><span>융자계획·공고의 정책 주체. 실제 접수·심사는 소진공·중진공 등이 맡는 경우가 많아요.</span></div>
+</div>
+<div class="flow"><i>공고·자격</i> → <i>온라인 신청</i> → <i>심사</i> → <i>약정·실행</i></div>
+</div>
+
+<div class="map-row">
+<div class="map-type"><span class="dot" style="background:#7C3AED"></span><div><h3>② 특례보증 (보증)</h3><p>담보가 부족할 때 보증기관이 <b>보증서</b>를 내줘 은행 대출을 가능하게 해요. 보증 ≠ 현금 지급.</p></div></div>
+<div class="orgs">
+<div class="org"><b>신용보증기금 (신보, KODIT)</b><span>담보가 약한 중소기업·창업기업 등에 신용보증. 성장단계별·청년창업 등 맞춤 프로그램이 있어요.</span></div>
+<div class="org"><b>기술보증기금 (기보, KIBO)</b><span>기술력 있는 신기술사업자·기술창업 쪽 보증. 원클릭보증 등 디지털 창구도 있음.</span></div>
+<div class="org"><b>지역신용보증재단 (지역신보)</b><span>시·도 단위로 소기업·소상공인 보증. 전국에 재단이 있고, 상품·한도는 지역마다 달라요. (구체 지역 상품은 1차에서 제외)</span></div>
+</div>
+<div class="flow"><i>보증 신청</i> → <i>신용·기술평가</i> → <i>보증서</i> → <i>은행 대출</i></div>
+</div>
+
+<div class="map-row">
+<div class="map-type"><span class="dot" style="background:var(--green)"></span><div><h3>③ 보조금 · 지원사업 (출연/사업비)</h3><p>선정되면 <b>갚지 않는</b> 사업비·바우처 형태가 많아요. 대신 경쟁·평가·정산이 있어요.</p></div></div>
+<div class="orgs">
+<div class="org"><b>K-Startup / 창업진흥원</b><span>예비·초기창업패키지 등 창업지원사업 공고·신청의 대표 창구.</span></div>
+<div class="org"><b>기업마당 · 중소벤처24 (smes.go.kr 등)</b><span>정부·지자체 지원사업 공고를 모아 검색하는 포털. “어떤 사업이 열려 있는지” 탐색용.</span></div>
+<div class="org"><b>중소벤처기업부 등 부처</b><span>공고의 정책 주체. 수행기관(창업진흥원, 전문기관 등)이 접수·관리하는 구조가 흔해요.</span></div>
+</div>
+<div class="flow"><i>공고</i> → <i>신청·평가</i> → <i>선정</i> → <i>협약·정산</i></div>
+</div>
+
+<div class="map-row">
+<div class="map-type"><span class="dot" style="background:var(--orange)"></span><div><h3>④ 지역 육성자금 · 시군 특례</h3><p>광역·기초 지자체가 따로 짜는 융자·보증·이차보전. <b>1차 범위 밖</b>.</p></div></div>
+<div class="orgs">
+<div class="org"><b>다음에 정리</b><span>경기도 중소기업육성자금, 시·군 특례보증 등은 전국 지도를 본 뒤 2차로 넣을 예정이에요.</span></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="sec-h"><h2>종류를 이렇게 읽어요</h2></div>
+<p class="sec-d">제도 이름을 보기 전에, 네 가지를 구분하면 헷갈림이 줄어들어요.</p>
+<div class="card">
+<ul class="list">
+<li><b>갚는가?</b> 융자·보증부 대출은 갚아요. 보조금·사업비는 보통 갚지 않지만 목적 외 사용·정산 책임이 있어요.</li>
+<li><b>누가 돈을 주나?</b> 융자는 공단·은행이 실행. 보증은 보증기관이 보증서만. 보조금은 선정 후 사업비.</li>
+<li><b>대상 문장</b> “소상공인”, “중소기업”, “창업 7년 미만”, “예비창업자”처럼 <b>누구인지</b>가 먼저예요.</li>
+<li><b>용도 문장</b> 운전(인건비·임차·운영) vs 시설(설비·인테리어·매입)을 나눠 적어요. 임차보증금이 되는지도 제도마다 달라요.</li>
+<li><b>제외업종</b> 주된 업종이 제외 목록이면 막혀요. 교육서비스는 보통 제외 목록에 없지만, <b>부동산업(공간 임대만)</b>은 원칙 제외·일부 예외(공유오피스 등)가 있어요.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<div class="sec-h"><h2>학습용 카탈로그</h2><span class="n">대표 제도</span></div>
+<p class="sec-d">“지금 신청”이 아니라, 전국에서 자주 나오는 대표 제도를 넓게 모아 두었어요. 적격 여부는 미확인입니다.</p>
+
+<article class="card">
+<div class="badges"><span class="b loan">정책대출</span><span class="b">소진공</span><span class="b ok">숫자 일부 확인</span></div>
+<h3>소상공인 정책자금 · 일반경영안정자금</h3>
+<p class="lead">업력 무관 소상공인 대상의 대표 대리대출. 운전자금 성격.</p>
+<dl>
+<dt>주관</dt><dd>소상공인시장진흥공단 (중기부 공고)</dd>
+<dt>대상</dt><dd>소상공인기본법상 소상공인 (상시근로 기준·제외업종 확인 필요)</dd>
+<dt>용도</dt><dd>운전자금 (제품생산·기업경영 자금)</dd>
+<dt>한도</dt><dd>연간 7천만원 (공고 기준)</dd>
+<dt>금리</dt><dd>’26년 4분기 기준 정책자금 기준금리+0.6%p → 연 4.72% (변동, 분기 변경)</dd>
+<dt>기간</dt><dd>5년 이내 (거치 2년 포함) — 공고 기준</dd>
+<dt>신청처</dt><dd>ols.semas.or.kr / 소진공 지역센터</dd>
+<dt>주의</dt><dd class="unk">기업당 합산 한도(운전 5억·시설포함 10억) 등 공통 규칙 있음. 본인 적격은 확인 필요.</dd>
+</dl>
+<div class="btns">
+<a class="btn" href="https://semas.or.kr/web/SUP01/SUP0103/SUP010301.kmdc" target="_blank" rel="noopener">소진공 정책자금 안내 ↗</a>
+<a class="btn s" href="https://ols.semas.or.kr" target="_blank" rel="noopener">온라인 신청 창 ↗</a>
+</div>
+</article>
+
+<article class="card">
+<div class="badges"><span class="b loan">정책대출</span><span class="b">소진공</span><span class="b ask">세부 유형 확인</span></div>
+<h3>소상공인 정책자금 · 성장·특화 계열</h3>
+<p class="lead">혁신성장촉진·소공인특화·재도전·청년고용연계·신용취약 등. 이름마다 대상·한도가 달라요.</p>
+<dl>
+<dt>주관</dt><dd>소상공인시장진흥공단</dd>
+<dt>대상</dt><dd>자금별 상이 (혁신형, 재창업, 청년고용, 중·저신용 등)</dd>
+<dt>용도</dt><dd>운전·시설 혼합 가능 자금이 있음</dd>
+<dt>한도·금리</dt><dd class="unk">자금별 상이 — 해당 연도 공고·분기 금리표 확인 필요</dd>
+<dt>참고</dt><dd>직접대출(소진공이 심사·실행) vs 대리대출(보증·은행 경유) 구조가 갈려요.</dd>
+</dl>
+<div class="btns">
+<a class="btn" href="https://semas.or.kr/web/SUP01/SUP0103/SUP010301.kmdc" target="_blank" rel="noopener">자금별 금리·안내 ↗</a>
+</div>
+</article>
+
+<article class="card">
+<div class="badges"><span class="b loan">정책대출</span><span class="b">중진공</span><span class="b ok">숫자 일부 확인</span></div>
+<h3>창업기반지원자금 (일반)</h3>
+<p class="lead">업력 7년 미만 창업자(예비 포함) 등. 중소기업 정책자금 안의 창업 트랙.</p>
+<dl>
+<dt>주관</dt><dd>중소벤처기업진흥공단 (중기부 공고)</dd>
+<dt>대상</dt><dd>창업 지원법상 창업자(업력 7년 미만 등). 신산업은 업력 완화 문구 있음</dd>
+<dt>용도</dt><dd>시설·운전 (시설 한도가 큼)</dd>
+<dt>한도</dt><dd>연간 60억원 이내, 운전자금은 연간 5억원 이내 (공고 기준)</dd>
+<dt>금리</dt><dd>정책자금 기준금리 − 0.3%p (직접·대리, 변동)</dd>
+<dt>기간</dt><dd>시설 10년 이내 / 운전 5년 이내 (거치 조건 공고 확인)</dd>
+<dt>주의</dt><dd class="unk">소상공인·제외업종·융자제한기업 조항이 있어, “중소기업”이라도 막힐 수 있음. 적격 미확인.</dd>
+</dl>
+<div class="btns">
+<a class="btn" href="https://www.kosmes.or.kr" target="_blank" rel="noopener">중진공 누리집 ↗</a>
+</div>
+</article>
+
+<article class="card">
+<div class="badges"><span class="b loan">정책대출</span><span class="b">중진공</span><span class="b ok">숫자 일부 확인</span></div>
+<h3>청년전용창업자금</h3>
+<p class="lead">대표자 만 39세 이하·업력 3년 미만(일부 예외) 창업 트랙. 고정금리.</p>
+<dl>
+<dt>주관</dt><dd>중소벤처기업진흥공단</dd>
+<dt>대상</dt><dd>만 39세 이하 대표, 업력 3년 미만(추천 등 예외 시 7년 미만 가능 문구)</dd>
+<dt>한도</dt><dd>기업당 최대 1억원 (제조·중점지원분야 2억원 이내)</dd>
+<dt>금리</dt><dd>연 2.5% 고정 (공고·정부24 안내 기준)</dd>
+<dt>기간</dt><dd>시설 10년 이내 / 운전 6년 이내 (거치 포함, 공고 확인)</dd>
+<dt>주의</dt><dd class="unk">나이·업력·중점지원분야 해당 여부는 본인 기준으로 확인 필요.</dd>
+</dl>
+<div class="btns">
+<a class="btn" href="https://www.kosmes.or.kr" target="_blank" rel="noopener">중진공 안내 ↗</a>
+<a class="btn s" href="https://www.gov.kr/portal/service/serviceInfo/142000000099" target="_blank" rel="noopener">정부24 요약 ↗</a>
+</div>
+</article>
+
+<article class="card">
+<div class="badges"><span class="b guar">특례보증</span><span class="b">신보</span><span class="b ask">상품별 확인</span></div>
+<h3>신용보증기금 · 창업·성장단계 보증</h3>
+<p class="lead">담보 대신 신용보증서로 은행 대출을 여는 제도. 현금 지원이 아님.</p>
+<dl>
+<dt>주관</dt><dd>신용보증기금 (kodit.co.kr)</dd>
+<dt>대상</dt><dd>담보력 약한 중소·창업기업 등 (상품별)</dd>
+<dt>용도</dt><dd>운전·시설 등 보증대상 채무</dd>
+<dt>한도·료</dt><dd class="unk">상품·등급별로 상이 — 확인 필요</dd>
+<dt>역할</dt><dd>정책대출(소진공 대리대출 등)과 <b>결합</b>되기도 하고, 일반 은행대출 보증만으로도 쓰여요.</dd>
+</dl>
+<div class="btns">
+<a class="btn" href="https://www.kodit.co.kr" target="_blank" rel="noopener">신용보증기금 ↗</a>
+</div>
+</article>
+
+<article class="card">
+<div class="badges"><span class="b guar">특례보증</span><span class="b">기보</span><span class="b ask">상품별 확인</span></div>
+<h3>기술보증기금 · 기술·창업 보증</h3>
+<p class="lead">기술평가를 바탕으로 한 보증. 기술창업·청년기술창업 우대 프로그램 등이 있어요.</p>
+<dl>
+<dt>주관</dt><dd>기술보증기금 (kibo.or.kr)</dd>
+<dt>대상</dt><dd>신기술사업자·기술창업 등 (상품별)</dd>
+<dt>용도</dt><dd>운전·사업장 임차·시설 등</dd>
+<dt>참고</dt><dd>원클릭보증: 창업 1년 이상, 신청금액 최대 1억원 이내 등 안내(디지털지점). 최종 한도는 심사.</dd>
+<dt>한도</dt><dd class="unk">상품별 상이 — 확인 필요</dd>
+</dl>
+<div class="btns">
+<a class="btn" href="https://www.kibo.or.kr" target="_blank" rel="noopener">기술보증기금 ↗</a>
+</div>
+</article>
+
+<article class="card">
+<div class="badges"><span class="b guar">특례보증</span><span class="b">지역신보</span><span class="b ask">지역별</span></div>
+<h3>지역신용보증재단 · 소상공인 보증</h3>
+<p class="lead">지역 소기업·소상공인 보증의 기본 축. 상품명은 시·도마다 다릅니다.</p>
+<dl>
+<dt>주관</dt><dd>각 시·도 지역신용보증재단</dd>
+<dt>대상</dt><dd>해당 지역 소기업·소상공인</dd>
+<dt>역할</dt><dd>소진공 대리대출의 보증서부 경로, 지자체 육성자금의 보증 심사 창구로도 자주 등장</dd>
+<dt>1차</dt><dd class="unk">구체 지역 상품·숫자는 다음 편. 지금은 “보증 지도상의 자리”만 표시.</dd>
+</dl>
+</article>
+
+<article class="card">
+<div class="badges"><span class="b grant">보조금·지원사업</span><span class="b">K-Startup</span><span class="b ask">회차·마감 확인</span></div>
+<h3>예비·초기창업패키지 등</h3>
+<p class="lead">융자가 아니라 <b>선정형 사업비</b>에 가까운 창업지원. 공고 회차·자격(예비/업력)이 핵심.</p>
+<dl>
+<dt>주관</dt><dd>중기부 · 창업진흥원 (K-Startup 창구)</dd>
+<dt>대상</dt><dd>예비창업자 / 초기(업력 제한) 등 공고별</dd>
+<dt>성격</dt><dd>대출이 아님. 평가·협약·정산</dd>
+<dt>일정</dt><dd class="unk">2026년 회차별로 접수 기간이 다름 — 해당 공고 확인 필요</dd>
+</dl>
+<div class="btns">
+<a class="btn" href="https://www.k-startup.go.kr" target="_blank" rel="noopener">K-Startup ↗</a>
+<a class="btn s" href="https://bizinfo.go.kr" target="_blank" rel="noopener">기업마당 공고 검색 ↗</a>
+</div>
+</article>
+</section>
+
+<section>
+<div class="sec-h"><h2>업종·사업장 체크</h2><span class="n">공부 포인트</span></div>
+<p class="sec-d">교육·원데이클래스·공간대여를 볼 때 자주 걸리는 지점이에요. 적격 확정이 아닙니다.</p>
+<div class="card">
+<ul class="list">
+<li><b>교육서비스·체험형 클래스</b> — 소상공인 정책자금 2026 제외업종 표에 교육서비스·학원이 기본 제외로 적혀 있지는 않아요. 다만 주된 업종코드·인허가(학원 등)는 사업자·세무 기준으로 따로 맞춰야 해요.</li>
+<li><b>공간대여·사무실 일부 임대</b> — 부동산업(표준산업분류 68)은 원칙 제외. 예외로 공유오피스·공유주방을 영위하는 비주거용건물임대업(68112) 등이 공고에 명시돼 있어요. “교육이 본업이고 공간이 부수”인지, “임대 매출이 주”인지에 따라 설명이 달라질 수 있어요.</li>
+<li><b>임차 사무실·인테리어·집기</b> — 운전자금(임차료·보증금·집기) vs 시설자금(공사·설비) 구분, 증빙(계약서·견적)이 심사의 기본이에요. 제도마다 임차보증금 인정 범위가 달라 <b>확인 필요</b>.</li>
+<li><b>개인사업자 vs 법인</b> — 많은 전국 융자·보증은 개인·법인 모두 열리지만, 보증·한도·서류·대표자 신용 반영 방식이 달라요. “법인만” 또는 “법인 전환 시 업력 산정” 문구가 있는 제도는 공고를 직접 봐야 해요.</li>
+<li><b>공유오피스·비상주</b> — 사업자등록·정책자금 모두 “실제 사업장인지” 사실 판단을 받을 수 있어요. 자금 용도와 별개로 주소·시설 요건을 먼저 정리하는 편이 안전해요.</li>
+</ul>
+<div class="btns" style="margin-top:16px">
+<a class="btn s" href="https://ols.semas.or.kr/ols/pfa/SPFA207P/page.do" target="_blank" rel="noopener">소상공인 제외업종 표 ↗</a>
+</div>
+</div>
+</section>
+
+<section>
+<div class="sec-h"><h2>제레미 맥락으로 보면</h2><span class="n">가능성만</span></div>
+<p class="sec-d">맞춤 “추천 점수”는 없어요. 공부할 때 어디를 펼치면 좋은지만 짧게.</p>
+<div class="card">
+<ul class="list">
+<li><b>AI 교육·빌더스랩(본업)</b> — 소상공인 정책자금·일반경영안정 쪽을 먼저 개념 익히기. 중진공은 “중소기업·창업 트랙” 문장이 맞는지 대조.</li>
+<li><b>화성시 동탄 교육·모임용 사무실</b> — 임차·집기·인테리어 용도가 운전/시설 어디에 속하는지 공고 용어로 번역해 보기. (주소·금액은 이 페이지에 없음)</li>
+<li><b>공간대여·공유 운영 아이디어</b> — 제외업종(부동산) 예외 조항을 읽어 두는 것이 우선. 확정 적격 아님.</li>
+<li><b>원데이클래스 준비</b> — 보조금(K-Startup 등)과 융자를 섞지 말고, “빚 vs 사업비”로 먼저 분류.</li>
+<li><b>법인 설립 검토 중</b> — 개인/법인 모두 다루는 제도와, 업력·대표 요건이 바뀌는 지점만 메모.</li>
+</ul>
+<div class="notice warn" style="margin:14px 0 0;background:var(--orange-bg);border-radius:14px;padding:12px 14px;font-size:13px;color:#8A5A00"><b style="color:#6b4500">적격 미확인.</b> 위 문장은 학습 동선이지, 신청 가능·승인 예고가 아닙니다.</div>
+</div>
+</section>
+
+<div class="check" id="stic">
+<h3>STIC으로 Narrow 하기</h3>
+<p>아직 조건은 전국·스터디입니다. 나중에 범위를 줄일 때 답해두면 좋아요. 체크는 이 기기에만 저장돼요.</p>
+<label><input type="checkbox" data-k="s"><div><b>S · 상황</b><span>지금 보고 싶은 범위는? (전국 지도 / 소상공인 융자만 / 보증만 / 보조금만) — 왜: 종류를 섞으면 비교가 안 돼요.</span></div></label>
+<label><input type="checkbox" data-k="t"><div><b>T · 할 일</b><span>목표가 공부·비교인지, 특정 서류 준비인지? — 왜: 스터디와 신청 준비가 필요한 깊이가 달라요.</span></div></label>
+<label><input type="checkbox" data-k="i"><div><b>I · 목적</b><span>지도 완성 후 다음에 알고 싶은 한 가지는? (예: 임차비 되는 제도만) — 왜: 카탈로그를 잘라낼 기준이 생겨요.</span></div></label>
+<label><input type="checkbox" data-k="c"><div><b>C · 조건</b><span>업력·개인/법인·주업종코드·지역(광역)을 확정했나요? — 왜: 같은 이름도 대상 문장이 다르면 탈락해요.</span></div></label>
+</div>
+
+<section id="src">
+<div class="sec-h"><h2>소스</h2><span class="n">공식 위주</span></div>
+<div class="card src">
+<ul class="list">
+<li><a href="https://semas.or.kr/web/SUP01/SUP0103/SUP010301.kmdc" target="_blank" rel="noopener">소상공인시장진흥공단 · 소상공인정책자금</a></li>
+<li><a href="https://ols.semas.or.kr" target="_blank" rel="noopener">소상공인정책자금 온라인 (ols.semas.or.kr)</a></li>
+<li><a href="https://ols.semas.or.kr/ols/pfa/SPFA207P/page.do" target="_blank" rel="noopener">소상공인정책자금 · 지원 제외업종</a></li>
+<li><a href="https://www.kosmes.or.kr" target="_blank" rel="noopener">중소벤처기업진흥공단</a></li>
+<li><a href="https://www.mss.go.kr" target="_blank" rel="noopener">중소벤처기업부</a></li>
+<li><a href="https://www.kodit.co.kr" target="_blank" rel="noopener">신용보증기금</a></li>
+<li><a href="https://www.kibo.or.kr" target="_blank" rel="noopener">기술보증기금</a></li>
+<li><a href="https://www.k-startup.go.kr" target="_blank" rel="noopener">K-Startup</a></li>
+<li><a href="https://bizinfo.go.kr" target="_blank" rel="noopener">기업마당</a></li>
+<li><a href="https://www.smes.go.kr" target="_blank" rel="noopener">중소벤처24 / smes.go.kr</a></li>
+<li><a href="https://www.gov.kr/portal/service/serviceInfo/142000000099" target="_blank" rel="noopener">정부24 · 청년전용창업자금 안내</a></li>
+<li><a href="https://www.easylaw.go.kr/CSP/CnpClsMainBtr.laf?ccfNo=3&cciNo=1&cnpClsNo=1&csmSeq=1973&popMenu=ov" target="_blank" rel="noopener">찾기쉬운 생활법령 · 소상공인 자금 지원</a></li>
+</ul>
+<p style="margin-top:12px;font-size:13px;color:var(--g2)">금리·한도 숫자는 중기부·소진공 2026년 소상공인 정책자금 융자 공고 및 소진공 분기 금리 안내, 중기부 2026 중소기업 정책자금 융자계획 공고를 기준으로 옮겼어요. 분기·개정 시 달라질 수 있어요.</p>
+</div>
+</section>
+
+<footer>
+개인·사업 연구용 스터디 페이지입니다. 토스·정부 기관 공식 페이지가 아니며, 로고를 사칭하지 않아요. 지역(광역·기초) 육성자금은 다음 편. 기준일 2026-11-06 · AI 빌더스 랩 / 제레미 학습용.
+</footer>
+</div>
+<script>
+document.querySelectorAll('.check input').forEach(i=>{
+  const k='pf-stic-'+i.dataset.k;
+  i.checked=localStorage.getItem(k)==='1';
+  i.onchange=()=>localStorage.setItem(k,i.checked?'1':'0');
+});
+</script>
+</body>
+</html>
